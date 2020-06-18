@@ -1,0 +1,1124 @@
+html, body, h1{
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+		max-width: 100%;
+		height: 100%;
+		max-height: 100%;
+		font-family:  sans-serif;
+		overflow: hidden;
+		font-family: 'Press Start 2P', cursive;
+		font-weight: initial;
+	}
+
+	body {
+		overflow: hidden;
+		background-image: url("../img/brick.png");
+		background-size: 6%;
+	}
+
+	h1{
+		color: #06f400;
+		text-align: center;
+		font-size: 2em;
+		text-shadow: 0px 0px 26px #000000;
+		overflow: initial;
+		height: auto;
+		font-weight: initial;
+	}
+
+	input {
+		font-family: 'Press Start 2P', cursive;
+	}
+
+	textarea {
+		font-family: 'Press Start 2P', cursive;
+	}
+
+	form {
+	    margin: 3% 0px;
+	}
+
+	ul {
+	    margin: 0px;
+	    -webkit-margin-before: 0px;
+	    -webkit-margin-after: 0px;
+	    -webkit-margin-start: 0px;
+	    -webkit-margin-end: 0px;
+	    -webkit-padding-start: 0px;
+	}
+
+
+	p {
+	    text-anchor: 101px;
+	    line-height: 1.4;
+	}
+
+	div#titulo {
+	    padding-top: 2%;
+	    transition: all 1s linear;
+	}
+
+	div#menu {
+		width: 40%;
+		height: 17%;
+		text-align: center;
+		transition: all 1s linear;
+		z-index: 1005;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0px auto;
+		bottom: 0;
+	}
+
+	.pagina {
+		border: solid 9px #000;
+		border-bottom-style: inset;
+		width: 18%;
+		height: 79%;
+		background-color: #fff;
+		background-size: 85%;
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	    display: inline-block;
+	    transition: all 0.6s ease;
+	    cursor: pointer;
+	}
+
+	.pagina:hover {
+		background-color: #78ffec;
+	}
+
+	.paginas img {
+	    max-width: 80%;
+	}
+
+	div#home {
+	    background-image: url(../img/home_buton.png);
+	}
+
+	#home:hover > #home_hover {
+		display: block;
+	}
+
+	div#proyectos {
+	    background-image: url(../img/proyectos_buton.png);
+	}
+
+	#proyectos:hover > #proyectos_hover {
+		display: block;
+	}
+
+
+	div#skills {
+	    background-image: url(../img/skills_buton.png);
+	}
+
+	#skills:hover > #skills_hover {
+		display: block;
+	}
+
+	div#contacto {
+	    background-image: url(../img/contacto_buton.png);
+	}
+
+	#contacto:hover > #contacto_hover {
+		display: block;
+	}
+
+	.help {
+		position: absolute;
+	    top: -70%;
+	    background-color: #fff;
+	    border: solid #000 9px;
+	    padding: 6px 10px;
+	    font-size: 0.7em;
+	    width: 50%;
+	    display: none;
+	}
+
+	#wrapper {
+		width: 100%;
+		height: 100%;
+
+	}
+	#filtro {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 1000;
+
+	}
+
+	#yo {
+	    background-image: url(../img/home.png);
+	    background-position: 0% 0%;
+	    animation: death 1s steps(4) infinite;
+	    background-size: 100%;
+	    max-width: 501px;
+	    max-height: 504px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    position: absolute;
+	    bottom: 17%;
+	    z-index: 5;
+	    left: 29%;
+	    transition: all 1s linear;
+	}
+
+	#flor {
+	    background-image: url(../img/flor_carnivora.png);
+	    background-position: 0% 0%;
+	    background-size: 100%;
+	    background-repeat: no-repeat;
+	    width: 13.61vw;
+	    height: calc(22.1083455344vw + 0.15373352855vw);
+	    position: absolute;
+	    bottom: 18%;
+	    left: 46%;
+	    transition: all 1s ease;
+	    cursor: pointer;
+	}
+
+	#flor:hover > #quiensoy {
+		display: block;
+	}
+
+	div#quiensoy {
+	    background-color: #f00f0f;
+	    padding: 9px;
+	    font-size: 2em;
+	    color: #fff;
+	    right: 0;
+	    position: absolute;
+	    display: none;
+	}
+
+	#piso {
+	    width: 100%;
+	    height: 21vh;
+	    background-image: url(../img/flor.png);
+	    background-size: 6%;
+	    bottom: 0;
+	    position: absolute;
+	    transition: all 1s linear;
+	}
+
+	.ventana {
+	    width: 20%;
+	    height: 34%;
+	    background-image: url(../img/VENTANAHIGS.png);
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	    top: 13%;
+	    left: 0px;
+	    position: absolute;
+	    transition: all 1s ease;
+	    
+	}
+
+	#ventana_2 {
+		left: 17%;
+	}
+
+	#ventana_3 {
+		left: 34%;
+	}
+
+	#ventana_4 {
+		left: 51%;
+	}
+
+	#puerta {
+	    width: 30vw;
+        height: 29.3vw;
+	    background-image: url(../img/PUERTAHIG.png);
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	    bottom: 17.9vh;
+	    right: 0;
+	    position: absolute;
+	    transition: all 1s ease;
+	}
+
+	div#texto {
+		position: absolute;
+		width: 25%;
+		height: 25%;
+		background-color: #fff;
+		left: 2%;
+		top: 9%;
+		padding: 1% 2%;
+		overflow: auto;
+		display: none;
+		transition: all 3s linear;
+		border: solid 9px #000;
+	    border-bottom-style: inset;
+	}
+
+	div#texto_bienvenidos {
+		    position: absolute;
+		    width: 75vw;
+		    height: auto;
+		    background-color: #fff;
+		    top: 16%;
+		    left: 0;
+		    right: 0;
+		    padding: 1% 2%;
+		    overflow: auto;
+		    transition: all 3s linear;
+		    border: solid 9px #000;
+		    border-bottom-style: inset;
+		    display: inline-block;
+		    margin: 0px auto;
+		    z-index: 1010;
+	}
+
+	div#cerrar_bienve {
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    background-color: #000;
+	    color: #fff;
+	    font-size: 1.2em;
+	    padding: 0px 0px 9px 9px;
+	    cursor: pointer;
+	}
+
+	div#texto::-webkit-scrollbar {
+	  width: 4%;
+	  height: 4%;
+	}
+	div#texto::-webkit-scrollbar-button {
+	  width: 0px;
+	  height: 0px;
+	}
+	div#texto::-webkit-scrollbar-thumb {
+	  background: #20ee15;
+	  border: 0px none #ffffff;
+	  border-radius: 0px;
+	}
+	div#texto::-webkit-scrollbar-thumb:hover {
+	  background: #20ee15;
+	}
+	div#texto::-webkit-scrollbar-thumb:active {
+	  background: #20ee15;
+	}
+	div#texto::-webkit-scrollbar-track {
+	  background: #ffffff;
+	  border: 0px none #ffffff;
+	  border-radius: 0px;
+	}
+	div#texto::-webkit-scrollbar-track:hover {
+	  background: #ffffff;
+	}
+	div#texto::-webkit-scrollbar-track:active {
+	  background: #ffffff;
+	}
+	div#texto::-webkit-scrollbar-corner {
+	  background: transparent;
+	}
+
+	.contenidos {
+			display: none;
+		    transition: all 1s linear;
+		    width: 44%;
+		    height: 53%;
+		    position: absolute;
+		    right: 7%;
+		    top: 5%;
+		    z-index: -6;
+		    padding: 4% 5%;
+	}
+
+	#cont_proyectos {
+	    overflow: auto;
+		background-image: url("../img/brick_2.jpg");
+		border: solid 9px #000;
+		background-size: 3%;
+	}
+
+	#cont_proyectos::-webkit-scrollbar {
+	  width: 4%;
+	      height: 0px;
+	}
+	#cont_proyectos::-webkit-scrollbar-button {
+	  width: 0px;
+	  height: 0px;
+	}
+	#cont_proyectos::-webkit-scrollbar-thumb {
+	  background: #20ee15;
+	  border: 0px none transparent;
+	  border-radius: 0px;
+	}
+	#cont_proyectos::-webkit-scrollbar-thumb:hover {
+	  background: #20ee15;
+	}
+	#cont_proyectos::-webkit-scrollbar-thumb:active {
+	  background: #20ee15;
+	}
+	#cont_proyectos::-webkit-scrollbar-track {
+	  background: transparent;
+	  border: 0px none transparent;
+	  border-radius: 0px;
+	}
+	#cont_proyectos::-webkit-scrollbar-track:hover {
+	  background: transparent;
+	}
+	#cont_proyectos::-webkit-scrollbar-track:active {
+	  background: transparent;
+	}
+	#cont_proyectos::-webkit-scrollbar-corner {
+	  background: transparent;
+	}
+
+	#cont_proyectos h1:first-child {
+	    color: #fff;
+	}
+
+
+
+	#cont_skills {
+		    overflow: auto;
+			background-image: url("../img/brick_3.jpg");
+			border: solid 9px #000;
+			background-size: 3%;
+		}
+
+	#cont_skills::-webkit-scrollbar {
+	  width: 4%;
+	      height: 0px;
+	}
+	#cont_skills::-webkit-scrollbar-button {
+	  width: 0px;
+	  height: 0px;
+	}
+	#cont_skills::-webkit-scrollbar-thumb {
+	  background: #20ee15;
+	  border: 0px none transparent;
+	  border-radius: 0px;
+	}
+	#cont_skills::-webkit-scrollbar-thumb:hover {
+	  background: #20ee15;
+	}
+	#cont_skills::-webkit-scrollbar-thumb:active {
+	  background: #20ee15;
+	}
+	#cont_skills::-webkit-scrollbar-track {
+	  background: transparent;
+	  border: 0px none transparent;
+	  border-radius: 0px;
+	}
+	#cont_skills::-webkit-scrollbar-track:hover {
+	  background: transparent;
+	}
+	#cont_skills::-webkit-scrollbar-track:active {
+	  background: transparent;
+	}
+	#cont_skills::-webkit-scrollbar-corner {
+	  background: transparent;
+	}
+
+	#cont_skills h1:first-child {
+	    color: #fff;
+	}
+
+	.skills {
+	    width: 49%;
+	    display: inline-block;
+	    cursor: pointer;
+	    text-align: center;
+	}
+
+	.skills img {
+		width: 70%;
+	}
+
+	div#menuskills {
+	    width: 100%;
+	    display: table;
+	    background: #fff;
+	    color: #000;
+	    display: none;
+	    margin-top: 10%;
+	}
+
+	div#menuskills h1 {
+	    display: table-cell;
+	    width: 50%;
+	    text-align: center;
+	    vertical-align: middle;
+	    font-size: 1em;
+	    color: #000 !important;
+	    text-shadow: none !important;
+	    cursor: pointer;
+	}
+
+	#contenido_habilidades {
+	    display: none;
+        padding: 2% 0px;
+	}
+
+	#contenido_servicios {
+	    display: none;
+        padding: 2% 0px;
+	}
+
+	#contenido_servicios li {
+	    width: 46%;
+	        display: inline-block;
+	        text-align: center;
+	        margin: 2% 0px;
+	        padding: 1%;
+	}
+
+	#contenido_servicios li div {
+
+		background-color: #fff;
+	    padding: 1%;
+	    margin: 1% 0px 5% 0px;
+	    border: solid 9px #000;
+	    border-bottom-style: inset;
+	}
+
+
+	#cont_contacto h1:first-child {
+	    font-size: 1.5em;
+	}
+
+	.paginas {
+	    text-align: center;
+	    width: 100%;
+	    margin: 8% 0px;
+	}
+
+	.paginas div {
+	    background-color: #fff;
+	    padding: 1%;
+	    margin: 1% 0px 5% 0px;
+	    border: solid 9px #000;
+        border-bottom-style: inset;
+	}
+
+	#cont_contacto {
+		text-align: center;
+	}
+
+	#cont_contacto input {
+		width: 54%;
+		height: 2vw;
+	}
+
+	#cont_contacto textarea {
+	    width: 85%;
+	    height: 16vh;
+	}
+
+	#OK {
+		display: none;
+	}
+
+	#cancel {
+		display: none;
+	}
+
+	#boton_Mobilform {
+		display: none;
+	}
+
+	.lifebar {
+	    width: 100%;
+	    margin-top: 10%;
+	    display: table;
+	    
+	}
+
+	#datos_personaje {
+		width: 80%;
+		height: 15vh;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	#personaje {
+	    width: 20%;
+	    height: 15vh;
+	    display: table-cell;
+	    vertical-align: middle;
+	}
+
+	.fuego {
+		background-image: url(../img/fuego-bit.gif);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	div#rostro {
+	    text-align: center;
+	    height: 62%;
+	}
+
+	div#rostro img {
+	   	height: 100%;
+	}
+
+	div#nombre_personaje {
+	    font-size: 2em;
+	        margin-left: 2%;
+	        margin-bottom: 2%;
+	}
+
+	div#vida {
+	    width: 90%;
+	    background-color: #000;
+	    color: #fff;
+	    height: 24%;
+	    text-align: right;
+	    border: 5px solid #000;
+	    border-radius: 5px;
+        transform: skewX(158deg);
+	}
+
+	div#vida_barra {
+	    width: 100%;
+	    height: 100%;
+	    background-color: #ff0404;
+	}
+
+
+	div#vida_porc {
+	    float: right;
+	    width: 100%;
+	    height: 100%;
+	    display: table;
+	}
+
+	div#vida_porc div {
+		display: table-cell;
+		vertical-align: middle;
+		font-size: 1.2em;
+		padding-right: 1%;
+	}
+
+	div#poder {
+	    width: 100%;
+	    height: 19%;
+	    margin-top: 1%;
+	}
+
+	.poderes {
+		background-color: #f2a500;
+		width: 18%;
+		height: 72%;
+		display: inline-block;
+		text-align: right;
+		border: 5px solid #000;
+		border-radius: 5px;
+		transform: skewX(155deg);
+	}
+
+	input#enviar {
+	    background-color: #ff0000;
+	    border: none;
+	    color: #fff;
+	    font-size: 1.3em;
+	    cursor: pointer;
+	}
+
+	#vicman {
+		position: absolute;
+		width: 25%;
+		height: auto;
+		z-index: 999999999;
+		bottom: 2%;
+		right: 0;
+		color: #fff;
+		font-size: 1em;
+	}
+
+	#vicman a{
+		color: #fff;
+	}
+
+	@keyframes death {
+		from{background-position: 0% 0%;}
+		to{background-position: 0% 134%;}
+	}
+
+	@keyframes compu {
+		from{background-position: 0% 0%;}
+		to{background-position: 0% 100%;}
+	}
+
+	@keyframes compu_regreso {
+		from{background-position: 0% 100%;}
+		to{background-position: 0% 0%;}
+	}
+
+	@keyframes skills {
+		from{background-position: 0% 0.36%;}
+		to{background-position: 0% 134%;}
+	}
+
+	@keyframes carta {
+		from{background-position: 0% 0%;}
+		to{background-position: 0% 111.24%;}
+	}
+
+	@keyframes carta_stop {
+		from{background-position: 0% 89.1%;}
+		to{background-position: 0% 111.35%;}
+	}
+
+	@keyframes carta_regreso {
+		from{background-position: 0% 111.35%;}
+		to{background-position: 0% 0%;}
+	}
+
+
+
+
+
+
+
+/*
+##########################################################################################################
+
+-----------------------------------------------------Responsive
+
+
+*/
+
+
+	@media all and (orientation: portrait) {
+
+		h1 {
+			font-size: 1.5em;
+		}
+
+		div#menu {
+			width: 100%;
+			height: 12%;
+		}
+
+		#yo {
+			width: 27.1739130435vh; 
+			height: calc(27.1739130435vh + 0.13586956521vh); 
+			left: 7%;
+			bottom: 37%;
+		}
+
+		#flor {
+			width: 17.173913vh; 
+			height: calc(27.1739130435vh + 0.13586956521vh);
+			left: 40%;
+			bottom: 38%;
+		}
+
+		.ventana {
+			width: 25%;
+			height: 15%;
+			top: 19%;
+		}
+
+		#puerta {
+			right: -14%;
+			width: 48vw;
+		    height: 47.3vw;
+		    bottom: 37.9vh;
+		}
+
+		#piso {
+			height: 39vh;
+		}
+
+	}
+
+	@media all and (orientation: landscape) {
+
+		#yo {width: 22.1083455344vw; height: calc(22.1083455344vw + 0.15373352855vw);}
+
+	}
+
+
+	@media (max-width: 1000px) and (orientation: landscape){
+
+		body {
+		    max-height: none;
+	        overflow: auto;
+		}
+
+		div#texto_bienvenidos {
+			width: 80%;
+		}
+
+		h1 {
+			font-size: 1em;
+		}
+
+		form {
+		    margin: 8% 0px;
+		}
+
+		.contenidos {
+		    width: 50%;
+		    height: 43%;
+		    right: 0;
+		    top: 7%;
+		}
+
+		#piso {
+			height: 28vh;
+		}
+
+		#yo {
+			bottom: 24%;
+		}
+
+		#flor {
+			bottom: 24%;
+		}
+	
+		
+		div#quiensoy {
+			    display: block;
+			        font-size: 1em;
+		}
+
+		div#texto {
+		    left: initial;
+		    right: 5%;
+		    top: initial;
+		    bottom: 14%;
+		    width: 37%;
+		    word-spacing: 20px;
+		}
+
+		.g-recaptcha {transform:scale(0.82);-webkit-transform:scale(0.82);transform-origin:0 0;-webkit-transform-origin:0 0;}
+
+		#rc-imageselect {transform:scale(0.82);-webkit-transform:scale(0.82);transform-origin:0 0;-webkit-transform-origin:0 0;}
+
+
+		#cont_proyectos h1:first-child {
+		    color: #fff;
+		    font-size: 1.5em;
+		}
+
+		#cont_contacto h1:first-child {
+		    font-size: 1em;
+		}
+
+		div#menu {
+			width: 57%;
+		    margin-top: 61vh;
+		    bottom: 7%;
+		}
+
+		.pagina {
+		    width: 14%;
+		}
+
+		#home:hover > #home_hover {
+			display: none;
+		}
+
+
+		#proyectos:hover > #proyectos_hover {
+			display: none;
+		}
+
+		#skills:hover > #skills_hover {
+			display: none;
+		}
+
+		#contacto:hover > #contacto_hover {
+			display: none;
+		}
+
+		#boton_Mobilform {
+			display: block;
+			text-align: center;
+			width: 100%;
+		}
+
+		#boton_Mobilform button {
+		    height: 11vh;
+		    border: none;
+		    color: #fff;
+		    font-size: 1em;
+		}
+
+		#cont_contacto input {
+		    height: 5vw;
+		    width: 100%;
+
+		}
+
+
+		.help {
+			display: none;
+		}
+
+		.correo {
+			display: none;
+		}
+
+		.telefono {
+			display: none;
+		}
+
+		.mensaje {
+			display: none;
+		}
+
+		.g-recaptcha {
+			display: none;
+		}
+
+		input#enviar {
+			height: 20vw;
+			display: none;
+			background-color: #002bff;
+		}
+
+		#OK {
+			display: inline-block;
+			width: 40%;
+			background: #2d37ab;
+		}
+
+		#cancel {
+			width: 40%;
+			background: #ce1919;
+
+		}
+
+		br {
+			display: none;
+		}
+
+		#contenido_servicios br {
+			display: block;
+		}
+
+		.paginas p {
+			font-size: 0.6em;
+		}
+
+		div#vicman {
+		    width: 100%;
+		    text-align: center;
+		    font-size: 0.7em;
+		    bottom: 0px;
+		}
+		
+		#contenido_servicios li {
+			width: 100%;
+		}
+
+		.skills {
+		    width: 100%;
+		    font-size: 0.8em;
+		}
+
+		div#nombre_personaje {
+		    font-size: 1em;
+		}
+
+		div#vida {
+		    height: 43%;
+		}
+
+		div#vida_porc div {
+		    font-size: 0.6em;
+		}
+
+	}
+
+
+	@media (max-width: 1000px) and (orientation: portrait){
+
+		body {
+		    max-height: none;
+	        overflow: auto;
+		}
+
+		h1 {
+			font-size: 1em;
+		}
+
+		form {
+		    margin: 8% 0px;
+		}
+
+		.contenidos {
+		    width: 82%;
+		    height: 37%;
+		    top: 8%;
+		    right: 0;
+		    left: 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+
+		div#texto {
+		    left: initial;
+		    right: 5%;
+		    top: initial;
+		    bottom: 14%;
+		    width: 37%;
+		    word-spacing: 20px;
+		}
+
+		.g-recaptcha {transform:scale(0.82);-webkit-transform:scale(0.82);transform-origin:0 0;-webkit-transform-origin:0 0;}
+
+		#rc-imageselect {transform:scale(0.82);-webkit-transform:scale(0.82);transform-origin:0 0;-webkit-transform-origin:0 0;}
+
+
+		#cont_proyectos h1:first-child {
+		    color: #fff;
+		    font-size: 1.5em;
+		}
+
+		#cont_contacto h1:first-child {
+		    font-size: 1.5em;
+		}
+
+		div#menu {
+		    width: 100%;
+		    margin: 0px;
+		    position: absolute;
+		    bottom: 15%; 
+
+		}
+
+		div#titulo {
+		    padding-top: 10%;
+		}
+
+		.pagina {
+		    width: 14%;
+		}
+
+		div#quiensoy {
+			    display: block;
+			        font-size: 1em;
+		}
+
+		#home:hover > #home_hover {
+			display: none;
+		}
+
+
+		#proyectos:hover > #proyectos_hover {
+			display: none;
+		}
+
+		#skills:hover > #skills_hover {
+			display: none;
+		}
+
+		#contacto:hover > #contacto_hover {
+			display: none;
+		}
+
+		#boton_Mobilform {
+			display: block;
+			text-align: center;
+			width: 100%;
+		}
+
+		#boton_Mobilform button {
+		    height: 11vh;
+		    border: none;
+		    color: #fff;
+		    font-size: 1em;
+		}
+
+		#cont_contacto input {
+		    height: 8vw;
+		    width: 100%;
+
+		}
+
+
+		.help {
+			display: none;
+		}
+
+		.correo {
+			display: none;
+		}
+
+		.telefono {
+			display: none;
+		}
+
+		.mensaje {
+			display: none;
+		}
+
+		.g-recaptcha {
+			display: none;
+		}
+
+		input#enviar {
+			height: 20vw;
+			display: none;
+			background-color: #002bff;
+		}
+
+		#OK {
+			display: inline-block;
+			width: 40%;
+			background: #2d37ab;
+		}
+
+		#cancel {
+			width: 40%;
+			background: #ce1919;
+
+		}
+
+		br {
+			display: none;
+		}
+
+		#contenido_servicios br {
+			display: block;
+		}
+
+		.paginas p {
+			font-size: 0.6em;
+		}
+
+		div#vicman {
+		    width: 100%;
+		    text-align: center;
+		}
+
+
+		#contenido_servicios li {
+			width: 100%;
+		}
+
+		.skills {
+		    width: 100%;
+		    font-size: 0.8em;
+		}
+
+		div#nombre_personaje {
+		    font-size: 1em;
+		}
+
+		div#vida {
+		    height: 43%;
+		}
+
+		div#vida_porc div {
+		    font-size: 0.6em;
+		}
+
+
+	}
